@@ -14,41 +14,11 @@
     <!-- Custom CSS link -->
     <link rel="stylesheet" href="style.css"/>
 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Moment.js -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-
     <title>Work Day Scheduler</title>
-
-    <script>
-      $(document).ready(function() {
-        // Get current date using Moment.js
-        let currentDate = moment().format("dddd, MMMM Do YYYY");
-        
-        // Set text of #currentDay element to currentDate
-        $('#currentDay').text(currentDate);
-
-        // Create timeblocks and append to .container div
-        for (let i = 9; i <= 17; i++) {
-          let ampm = i >= 12 ? 'pm' : 'am';
-          let hour = i > 12 ? i - 12 : i;
-          let $timeBlock = $('<div class="row time-block">');
-          let $hourCol = $(`<div class="hour col-2">${hour}${ampm}</div>`);
-          let $descriptionCol = $('<textarea class="col-8 description"></textarea>');
-          let $saveBtnCol = $('<button class="saveBtn col-2"><i class="fas fa-save"></i></button>');
-
-          $timeBlock.append($hourCol, $descriptionCol, $saveBtnCol);
-          $('.container').append($timeBlock);
-        }
-      });
-    </script>
 
   </head>
 
   <body>
-
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
@@ -56,9 +26,16 @@
     </header>
 
     <div class="container">
-      
+
     </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Moment.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
-
