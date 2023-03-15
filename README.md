@@ -28,7 +28,7 @@ Bootstrap
 Font Awesome
 Note
 
-This project is a basic implementation of a calendar app and can be further developed and customized to fit specific needs and requirements.
 
+![image](https://user-images.githubusercontent.com/76743603/225287344-a4ee1f25-e468-4c9c-8d20-0701fdd0789b.png)
 
 
